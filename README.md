@@ -6,60 +6,62 @@
 
 # Simple Learning Platform — Course Catalogue
 
+A responsive, category-based learning catalogue that presents example topics across Technology, Science, Healthcare, and Business. The interface uses selectable category cards, subject-specific image carousels, topic lists, and simple section navigation.
+
+![HTML5](https://img.shields.io/badge/HTML5-Structure-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Interactions-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-4.5.2-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+
+---
+
 ## 1. Project Overview
 
-The **Simple Learning Platform — Course Catalogue** is a front-end web application that organizes learning topics into four subject areas: **Technology, Science, Healthcare, and Business**.
+The **Simple Learning Platform — Course Catalogue** is a client-side web application designed to make subject browsing clear and straightforward.
 
-The home screen presents each subject as a selectable card. Selecting a card opens the corresponding subject section, where users can browse an image carousel and review a list of related topics. A **Back** button returns users to the main category screen.
+The landing page displays four subject categories as selectable cards. Selecting a category opens its content section, where users can browse an image carousel and review related topic labels. A **Back** control returns users to the category landing page.
 
-The project demonstrates core front-end development concepts: HTML for page structure, CSS for presentation, Bootstrap for layout and carousel components, and JavaScript-driven interactions for navigation.
+The project demonstrates the role of HTML in page structure, CSS in visual presentation, Bootstrap in layout and carousel components, and JavaScript-driven interactions in navigation.
 
 ## 2. Problem Statement
 
-A catalogue covering several disciplines needs a clear and consistent way to group topics and help users browse them. This project demonstrates a category-based interface that presents subject areas and example topics in a straightforward visual structure.
+A catalogue covering multiple disciplines needs a consistent way to group topics and help users navigate between them. This project addresses that interface-level need by organizing example topics into subject categories and presenting them through a simple, structured browsing experience.
 
-## 3. Project Objectives
+## 3. Objectives
 
-- Organize topics into distinct subject categories.
+- Organize example learning topics into four subject categories.
 - Provide a clear landing page with selectable category cards.
-- Display subject-related images using carousels.
-- Present example topics for each category.
+- Display subject-related images through carousels.
+- Present topic lists for each category.
 - Enable navigation between the landing page and category sections.
-- Apply front-end layout, styling, and interaction techniques.
+- Apply front-end layout, styling, and interaction concepts.
 
-## 4. Key Features
+## 4. Features
 
-### Subject categories
-Users can select Technology, Science, Healthcare, or Business from the landing page.
-
-### Image carousels
-Each subject section includes a Bootstrap carousel with slide indicators and previous/next controls.
-
-### Topic lists
-Each category displays example topics related to its subject area.
-
-### Section navigation
-Category selection opens the associated section. The Back button returns to the category landing page.
-
-### Consistent interface styling
-Custom CSS defines the page background, cards, typography, spacing, and buttons. Bootstrap classes support layout and carousel presentation.
+| Feature | Description |
+|---|---|
+| Category selection | Opens the selected Technology, Science, Healthcare, or Business section |
+| Image carousels | Displays subject-related images with carousel controls |
+| Topic lists | Presents example topics within each category |
+| Section navigation | Allows users to return to the landing page using the Back control |
+| Custom styling | Applies consistent colors, typography, spacing, cards, and button styles |
 
 ## 5. Technology Stack
 
-| Technology | Purpose |
+| Technology | Role |
 |---|---|
-| HTML5 | Defines the page structure, category cards, topic lists, buttons, and carousel markup |
-| CSS3 | Controls colors, typography, spacing, dimensions, and other visual styles |
+| HTML5 | Defines page structure, category cards, content sections, topic lists, and carousel markup |
+| CSS3 | Controls colors, typography, spacing, dimensions, and visual styling |
 | Bootstrap 4.5.2 | Provides layout utilities and carousel components |
-| JavaScript | Supports interactive section navigation and carousel behavior |
+| JavaScript | Supports section navigation and interactive behavior |
 | jQuery and Popper.js | Provide dependencies used by Bootstrap 4 JavaScript components |
-| CCBP UI Kit | Included by the page for the supplied `display(...)` navigation behavior |
+| CCBP UI Kit | Included for the supplied `display(...)` navigation behavior |
 
-**Implementation scope:** The supplied files describe a client-side interface. They do not show a server-side framework, authentication, course enrollment, API integration, or a database. These should not be presented as implemented features unless they are added separately.
+**Scope note:** The supplied files show a front-end interface only. They do not demonstrate a server-side framework, authentication, API integration, course enrollment, payments, or database operations. These capabilities should not be described as implemented features unless they are added separately.
 
 ## 6. System Architecture
 
-The diagram below represents the front-end structure shown in the supplied files. It does not imply a backend or database.
+The diagram represents the front-end structure of the supplied project. It does not imply a backend or database.
 
 ```mermaid
 flowchart TD
@@ -81,18 +83,18 @@ flowchart TD
     class UI output
 ```
 
-### Architecture explanation
+### Architecture walkthrough
 
-1. The user opens the HTML page in a web browser.
-2. The browser reads the page markup and loads the linked stylesheet and JavaScript dependencies.
+1. The user opens `p1.html` in a web browser.
+2. The browser reads the HTML markup and loads the linked stylesheet and JavaScript dependencies.
 3. HTML defines the category cards, subject sections, image carousels, topic lists, and navigation controls.
-4. CSS and Bootstrap determine the page layout and visual presentation.
+4. CSS and Bootstrap determine the layout and visual presentation.
 5. JavaScript-driven interactions display the selected category or return the user to the landing page.
-6. The browser renders the resulting interface. The supplied project does not show server-side data processing.
+6. The browser renders the interface. The supplied project does not show server-side data processing.
 
 ## 7. Application Flowcharts
 
-### A. Main user journey
+### 7.1 Main user journey
 
 ```mermaid
 flowchart TD
@@ -124,7 +126,7 @@ flowchart TD
     class D,X decision
 ```
 
-### B. Category navigation logic
+### 7.2 Category navigation logic
 
 ```mermaid
 flowchart TD
@@ -151,14 +153,14 @@ flowchart TD
     class B decision
 ```
 
-### Flowchart interpretation
+### Flowchart notes
 
 - Each branch represents one of the four available categories.
 - Carousel controls change the visible slide within the selected subject section.
-- The Back button returns the user to the category landing page.
-- The diagrams describe the behavior represented by the supplied HTML. They do not include login, enrollment, payments, APIs, or database operations.
+- The Back control returns the user to the category landing page.
+- The diagrams describe the behavior represented by the supplied HTML; they do not include login, enrollment, payments, API calls, or database operations.
 
-## 8. Subject Categories and Example Topics
+## 8. Subject Categories
 
 | Category | Example topics displayed |
 |---|---|
@@ -167,7 +169,7 @@ flowchart TD
 | Healthcare | Infrastructure Management, Latest in Healthcare, Pharmaceuticals, COVID-19 |
 | Business | Business Models, 21st Century Business Skills, Traditional Business Approaches, Startup Fundamentals |
 
-These are topic labels shown by the interface. The supplied files do not demonstrate full lessons, assessments, or enrollment functionality.
+These are topic labels displayed by the interface. The supplied files do not demonstrate full lessons, assessments, or enrollment functionality.
 
 ## 9. Project Structure
 
@@ -175,14 +177,14 @@ These are topic labels shown by the interface. The supplied files do not demonst
 Simple-Learning-Platform/
 ├── p1.html       # Main page structure and category sections
 ├── p2.CSS        # Custom visual styling
-└── README.md     # Project documentation and flowcharts
+└── README.md     # Project documentation
 ```
 
 Keep `p1.html` and `p2.CSS` in the same directory unless the stylesheet path in the HTML file is changed.
 
-## 10. How to Run the Project
+## 10. Run Locally
 
-1. Download or clone the repository.
+1. Clone or download the repository.
 2. Keep `p1.html` and `p2.CSS` in the same folder.
 3. Ensure an internet connection is available because Bootstrap, jQuery, Popper.js, fonts, images, and the CCBP UI Kit are referenced through external URLs.
 4. Open `p1.html` in a modern web browser.
@@ -198,10 +200,10 @@ This project provides practice in:
 - Applying visual styles with CSS.
 - Using Bootstrap layout utilities and carousel components.
 - Connecting user actions to section navigation.
-- Grouping related content into consistent interface patterns.
+- Organizing related content into consistent interface patterns.
 - Documenting application structure and behavior with Mermaid diagrams.
 
-## 12. Current Scope and Future Improvements
+## 12. Potential Improvements
 
 The supplied version is a front-end demonstration. Potential improvements include:
 
@@ -211,14 +213,14 @@ The supplied version is a front-end demonstration. Potential improvements includ
 - Replace inline `onclick` attributes with organized JavaScript event listeners.
 - Improve keyboard navigation and accessibility.
 - Store topic content in structured data to reduce repeated markup.
-- Add a backend, database, accounts, or enrollment only if these are required for a future version.
+- Add a backend, database, user accounts, or enrollment only if required for a future version.
 
 ## 13. Privacy and Security
 
-This documentation describes the visible application behavior and does not include credentials, tokens, or private account details.
+This README describes the visible application behavior and does not include credentials, tokens, or private account details.
 
-Before making the repository public, review the project files and Git history for private information. Also review external scripts, assets, and dependencies referenced by the page.
+Before publishing the repository publicly, review all project files and Git history for private information. Review external scripts, assets, and dependencies referenced by the page as well.
 
 ---
 
-**Project summary:** A front-end learning catalogue built with HTML5, CSS3, Bootstrap 4, and JavaScript. It demonstrates category-based browsing, image carousels, topic organization, and navigation between subject sections.
+**Summary:** A front-end learning catalogue built with HTML5, CSS3, Bootstrap 4, and JavaScript. It demonstrates category-based browsing, image carousels, topic organization, and navigation between subject sections.
